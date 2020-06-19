@@ -1,0 +1,73 @@
+@import '~antd/es/style/themes/default.less';
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  .primary{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(109, 129, 224, 0.27);
+    width: 595px;
+    height: 658px;
+    overflow: hidden;
+    .main {
+     
+      width: 368px;
+      margin: 0 auto;
+      @media screen and (max-width: @screen-sm) {
+        width: 95%;
+      }
+      .title {
+        position: relative;
+        margin-top: 38px;
+        max-width: 1125px;
+        height: 27px;
+        overflow: hidden;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        line-height: 28px;
+        letter-spacing: 0px;
+        white-space: nowrap;
+        color: #ffffff;
+        font-size: 28px;
+      }
+      .icon {
+        margin-left: 16px;
+        color: rgba(0, 0, 0, 0.2);
+        font-size: 24px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color 0.3s;
+    
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    
+      .other {
+        margin-top: 24px;
+        line-height: 22px;
+        text-align: left;
+    
+        .register {
+          float: right;
+        }
+      }
+    
+      :global {
+        .antd-pro-login-submit {
+          width: 100%;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+  
+}
